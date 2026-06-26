@@ -1,0 +1,23 @@
+{
+  "name": "@fortyfoxes/wiki-capsule",
+  "version": "0.1.0",
+  "description": "Shared capsule helpers for the Federated Wiki Visual Plugin Family — Kroki render client, SVG sanitiser, node auto-linking to wiki pages, fullscreen, and freeze-to-ghost-capsule.",
+  "type": "module",
+  "main": "capsule.js",
+  "files": ["capsule.js"],
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": ["federated-wiki", "fedwiki", "wiki-plugin", "svg", "kroki", "capsule"],
+  "author": "David Bovill",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hitchhikers-Guide-to-the-Galaxy/wiki-capsule.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hitchhikers-Guide-to-the-Galaxy/wiki-capsule/issues"
+  },
+  "homepage": "https://github.com/Hitchhikers-Guide-to-the-Galaxy/wiki-capsule#readme",
+  "engines": { "node": ">=18" }
+}
