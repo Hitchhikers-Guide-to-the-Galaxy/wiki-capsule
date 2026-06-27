@@ -10,7 +10,10 @@
 
 // ── Kroki client (Render Broker) ──────────────────────────────────────────────
 // Local-first, public fallback. Used by the Mermaid and Diagram plugins.
-export const DEFAULT_ENDPOINTS = ['http://localhost:8001', 'https://kroki.io']
+// Local Kroki reached by name via Caddy (kroki.localhost → port 4246), so the
+// Hitchhiker port policy can move Kroki without ever touching this. Public
+// kroki.io is the fallback. See localhost "Hitchhiker Ports".
+export const DEFAULT_ENDPOINTS = ['http://render.localhost', 'https://kroki.io']
 
 // Sanitise HTML inside foreignObject (Mermaid 11 uses it for node labels).
 const sanitizeForeignObject = (fo) => {
